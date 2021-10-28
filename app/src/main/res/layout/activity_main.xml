@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+  <EditText
+      android:id="@+id/insiraNumeros1"
+      android:layout_width="150dp"
+      android:layout_height="wrap_content"
+      android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+      android:textColor="#3F51B5"
+      android:textColorLink="#673AB7"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="Numero1" />
+
+  <EditText
+      android:id="@+id/insiraNumeros2"
+      android:layout_width="150dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="36dp"
+      android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+      android:textColor="#2196F3"
+      app:layout_constraintStart_toEndOf="@+id/insiraNumeros1"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="Numero2" />
+
+
+  <TextView
+      android:id="@+id/mostrarResultado"
+      android:layout_width="322dp"
+      android:layout_height="57dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="12dp"
+      android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+      android:textColor="#03A9F4"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/insiraNumeros1"
+      tools:text="Resultado" />
+
+   <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mostrarResultado"
+            android:id="@+id/radiogroup1" />
+
+
+ <RadioButton
+
+
+     android:id="@+id/opcaoSomar"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="somar"
+     android:textColor="#E91E63"
+     android:textColorHighlight="@color/black"
+     tools:ignore="MissingConstraints"
+     tools:layout_editor_absoluteX="0dp"
+     tools:layout_editor_absoluteY="141dp" />
+
+ <RadioButton
+
+     android:id="@+id/opcaoSubtracao"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:onClick="@string/subtrair"
+     android:text="subtrair"
+     android:textColor="#E91E63"
+     tools:ignore="MissingConstraints"
+     tools:layout_editor_absoluteX="0dp"
+     tools:layout_editor_absoluteY="206dp" />
+
+ <RadioButton
+     android:id="@+id/opcaoMultiplicacao"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:onClick="@string/multiplicar"
+     android:text="@string/multiplicar"
+     android:textColor="#E91E63"
+     android:textColorHint="@color/black"
+     tools:ignore="MissingConstraints"
+     tools:layout_editor_absoluteX="0dp"
+     tools:layout_editor_absoluteY="358dp" />
+
+ <RadioButton
+     android:id="@+id/opcaoDivisao"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:onClick="@string/Dividir"
+     android:text="@string/dividir"
+     android:textColor="#E91E63"
+     tools:ignore="MissingConstraints"
+     tools:layout_editor_absoluteX="0dp"
+     tools:layout_editor_absoluteY="280dp" />
+
+  <Button
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/calculate_button"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="469dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
